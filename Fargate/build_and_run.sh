@@ -7,16 +7,15 @@ sudo systemctl start docker
 
 sudo touch ~/.ssh/myrepokey
 echo "-----BEGIN OPENSSH PRIVATE KEY-----" >> ~/.ssh/myrepokey
-echo "b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABASb3LCR6" >> ~/.ssh/myrepokey
-echo "VgoBxKowA1sUZoAAAAEAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIFOshfnYYAulpoQb" >> ~/.ssh/myrepokey
-echo "kAubQplhghjn5ATQoYXOf9tosEwhAAAAoBddaVb3lgBwBU+y4vYaAYuwqzT3y0UWsMbF5z" >> ~/.ssh/myrepokey
-echo "WrDb5CMILoP+U7FJB54p6UHfMRouAQMt6GyEILJqB33zgyL6Xr7p/0C8LzxGCweVRY1Tgh" >> ~/.ssh/myrepokey
-echo "3JCdhYKhps/CyT7AFnHxTnBFqGyVmbkaex7AwHyQezDOXeZoetOF3Yi1iMgeZj30qJVSsy" >> ~/.ssh/myrepokey
-echo "4kpBAF2WYOO/RcNbYGdmk6e4m4p2GCoYB8dzA=" >> ~/.ssh/myrepokey
+echo "b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW" >> ~/.ssh/myrepokey
+echo "QyNTUxOQAAACC7J5HuWhtg9y0L9rk5OmSjRuR1XotisnIOB/zIbG+AYQAAAJgRK73YESu9" >> ~/.ssh/myrepokey
+echo "2AAAAAtzc2gtZWQyNTUxOQAAACC7J5HuWhtg9y0L9rk5OmSjRuR1XotisnIOB/zIbG+AYQ" >> ~/.ssh/myrepokey
+echo "AAAEDpbSDuBIYc7EDtSM0Xiyss0/gRu0TVkI4KuT4rpPnmsbsnke5aG2D3LQv2uTk6ZKNG" >> ~/.ssh/myrepokey
+echo "5HVei2Kycg4H/Mhsb4BhAAAAFGlzaGlpdGFwYWxAZ21haWwuY29tAQ==" >> ~/.ssh/myrepokey
 echo "-----END OPENSSH PRIVATE KEY-----" >> ~/.ssh/myrepokey
 
 sudo touch ~/.ssh/myrepokey.pub
-echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFOshfnYYAulpoQbkAubQplhghjn5ATQoYXOf9tosEwh ishiitapal@gmail.com" >> ~/.ssh/myrepokey.pub
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILsnke5aG2D3LQv2uTk6ZKNG5HVei2Kycg4H/Mhsb4Bh ishiitapal@gmail.com" >> ~/.ssh/myrepokey.pub
 
 sudo touch ~/.ssh/config
 echo "Host github.com-app-repo" >> ~/.ssh/config
