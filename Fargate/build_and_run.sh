@@ -27,8 +27,8 @@ sudo chmod 600 ~/.ssh/myrepokey
 
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
-sudo git clone git@github.com-app-repo:pwr-cloudprogramming/a5-palishiita.git
+sudo git clone git@github.com-app-repo:pwr-cloudprogramming/a7-palishiita.git
 
-sh /a5-palishiita/build/run.sh
+sh /a7-palishiita/Fargate/build/run.sh
 sudo docker run --name backend -d -p 8080:8080 build_backend
 sudo docker run --name frontend -d -p 80:80 build_frontend
