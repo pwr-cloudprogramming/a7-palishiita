@@ -4,9 +4,9 @@
 - Group: Thursday 3:15 PM
 - Date: 23rd May 2024
 
-## Environment architecture
+# Environment architecture
 
-# Elastic Beanstalk
+##   Elastic Beanstalk
 
 ## AWS Provider Configuration
 - **AWS Region**: Configured to `us-east-1`.
@@ -53,7 +53,7 @@
 - **Backend Application URL**: `http://${aws_elastic_beanstalk_environment.backend_env.cname}:8080`
 - **Frontend Application URL**: `http://${aws_elastic_beanstalk_environment.frontend_env.cname}:3000`
 
-# Fargate
+##   Fargate
 
 ## AWS Provider Configuration
 - **AWS Region**: Configured to `us-east-1`.
