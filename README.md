@@ -1,4 +1,4 @@
-# Maja Placek - Terraform, EC2, TicTacToe report
+# Ishiita Pal - Terraform, EC2, TicTacToe report
 
 - Course: Cloud programming
 - Group: Thursday 3:15 PM
