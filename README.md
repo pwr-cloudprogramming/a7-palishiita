@@ -1,4 +1,4 @@
-# Ishiita Pal - Terraform, EC2, TicTacToe report
+# Ishiita Pal - Elastic Beanstalk and Fargate report
 
 - Course: Cloud programming
 - Group: Thursday 3:15 PM
