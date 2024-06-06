@@ -24,7 +24,6 @@
     <button id="random" onclick="connectToRandom()">Connect to random game</button>
   </div>
 
-
   <div id="message"></div>
   <ul id="gameBoard">
     <li class="tic" id="0_0"></li>
@@ -49,10 +48,11 @@
   var turns = [["#", "#", "#"], ["#", "#", "#"], ["#", "#", "#"]];
   var turn = "";
   var gameOn = false;
-  const url = 'http://localhost:8080';
+  const url = 'http://tictactoe-alb-1929363220.us-east-1.elb.amazonaws.com:8080'; // Update with your ALB DNS name
   let stompClient;
   let gameId;
   let playerType;
+  
   function connectToSocket(gameId) {
     console.log("connecting to the game");
     let socket = new SockJS(url + "/gameplay");
@@ -78,7 +78,7 @@
         dataType: "json",
         contentType: "application/json",
         data: JSON.stringify({
-          "login": login
+          "name": login // Update this to "name" as per the backend changes
         }),
         success: function (data) {
           gameId = data.gameId;
@@ -95,7 +95,6 @@
     }
   }
 
-
   function connectToRandom() {
     let login = document.getElementById("login").value;
     if (login == null || login === '') {
@@ -107,14 +106,14 @@
         dataType: "json",
         contentType: "application/json",
         data: JSON.stringify({
-          "login": login
+          "name": login // Update this to "name" as per the backend changes
         }),
         success: function (data) {
           gameId = data.gameId;
           playerType = 'O';
           reset();
           connectToSocket(gameId);
-          alert("Congrats you're playing with: " + data.player1.login);
+          alert("Congrats you're playing with: " + data.player1.name);
         },
         error: function (error) {
           console.log(error);
