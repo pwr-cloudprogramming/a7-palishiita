@@ -6,7 +6,7 @@
 
 # Environment architecture
 
-##   Elastic Beanstalk
+#   Fargate
 
 ## AWS Provider Configuration
 - **AWS Region**: Configured to `us-east-1`.
@@ -29,7 +29,7 @@
   - Incoming traffic: TCP on port `3000` (allowed from `0.0.0.0/0`)
   - Outgoing traffic: All traffic allowed
 
-## Elastic Beanstalk Setup
+# Elastic Beanstalk 
 - **Applications**:
   - `backend_app`
   - `frontend_app_v2`
